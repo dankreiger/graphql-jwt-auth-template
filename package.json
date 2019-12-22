@@ -1,0 +1,36 @@
+{
+  "name": "jwt-auth",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "client": "yarn --cwd web start",
+    "client:install": "yarn --cwd web",
+    "dev": "concurrently \"yarn server\" \"yarn docs:watch\" \"yarn client\"",
+    "dev:install": "concurrently \"yarn server:install\" \"yarn client:install\"",
+    "docs:watch": "yarn --cwd web gen --watch",
+    "server": "yarn --cwd server start",
+    "server:install": "yarn --cwd server",
+    "sort": "sort-package-json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "concurrently": "^5.0.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1"
+  }
+}
