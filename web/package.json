@@ -44,7 +44,7 @@
     "@graphql-codegen/typescript-operations": "1.9.2-alpha-fcffe9a6.30",
     "@graphql-codegen/typescript-react-apollo": "1.9.2-alpha-fcffe9a6.30",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "9.5.0",
     "@testing-library/user-event": "^7.1.2",
     "@types/graphql": "^14.5.0",
     "@types/jest": "^24.0.0",
