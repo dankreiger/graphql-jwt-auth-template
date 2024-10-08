@@ -39,10 +39,10 @@
     "typescript": "~3.7.2"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.9.1",
-    "@graphql-codegen/typescript": "1.9.2-alpha-fcffe9a6.30",
-    "@graphql-codegen/typescript-operations": "1.9.2-alpha-fcffe9a6.30",
-    "@graphql-codegen/typescript-react-apollo": "1.9.2-alpha-fcffe9a6.30",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/typescript": "4.1.0",
+    "@graphql-codegen/typescript-operations": "4.3.0",
+    "@graphql-codegen/typescript-react-apollo": "4.3.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
